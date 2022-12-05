@@ -14,18 +14,18 @@ db.mongoose
     // useFindAndModify: true,
   })
   .then((res) => {
-    console.log(`Database connected euy!`, res);
+    console.log(`Database connected euy!`);
   })
   .catch((err) => {
     console.log(`Can't connect to database`, err);
     process.exit();
   });
 
-// app.get("/", (req, res) => {
-//   res.json({
-//     message: "welcome to express noob",
-//   });
-// });
+app.get("/", (req, res) => {
+  res.json({
+    message: "welcome to express noob",
+  });
+});
 
 require("./app/routes/api.routes")(app);
 
