@@ -17,7 +17,7 @@ db.mongoose
     console.log(`Database connected euy!`);
   })
   .catch((err) => {
-    console.log(`Can't connect to database`);
+    console.log(`Can't connect to database`, err);
     process.exit();
   });
 
