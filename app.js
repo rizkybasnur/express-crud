@@ -13,8 +13,8 @@ db.mongoose
     // useUnifiedTopology: true,
     // useFindAndModify: true,
   })
-  .then(() => {
-    console.log(`Database connected euy!`);
+  .then((res) => {
+    console.log(`Database connected euy!`, res);
   })
   .catch((err) => {
     console.log(`Can't connect to database`, err);
