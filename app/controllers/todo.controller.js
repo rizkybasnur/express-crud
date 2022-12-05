@@ -4,7 +4,7 @@ const Todo = db.todos;
 exports.getAllTodo = (req, res) => {
     Todo.find()
     .then((result) => {
-      res.send(result);
+      res.body.send(result);
     })
     .catch((err) => {
       res.status(500).send({
